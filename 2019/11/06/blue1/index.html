@@ -391,15 +391,13 @@ height:50vh;
 <p>stm32cube版本号要高于5.3否则也无法实现功能</p>
 <p>cannon开发板的型号是STM32F401RET 需要在软件内先下载或者更新</p>
 <p>还要下载名为X-CUBE-BLE1和X-CUBE-MEMS1的两个插件包</p>
-<h3 id="插件包都下载完成之后就可以开始进行配置了"><a href="#插件包都下载完成之后就可以开始进行配置了" class="headerlink" title="插件包都下载完成之后就可以开始进行配置了"></a>插件包都下载完成之后就可以开始进行配置了</h3><h3 id="①file-new-project-创建新工程"><a href="#①file-new-project-创建新工程" class="headerlink" title="①file-new project 创建新工程"></a>①file-new project 创建新工程</h3><h3 id="②弹出来的页面里我们搜索STM32F401RET-找到之后双击它-这个时候我们就进入了工程的设置页面"><a href="#②弹出来的页面里我们搜索STM32F401RET-找到之后双击它-这个时候我们就进入了工程的设置页面" class="headerlink" title="②弹出来的页面里我们搜索STM32F401RET 找到之后双击它 这个时候我们就进入了工程的设置页面"></a>②弹出来的页面里我们搜索STM32F401RET 找到之后双击它 这个时候我们就进入了工程的设置页面</h3><h3 id="③SYS设置修改"><a href="#③SYS设置修改" class="headerlink" title="③SYS设置修改"></a>③SYS设置修改</h3><pre><code>在左边栏里点击system core他会展开
-展开之后我们点击SYS
-这是展开了SYS的设置页面
-我们把Debug这栏选择Serial
-这样SYS就设置好了</code></pre><h3 id="④SPI1的设置修改"><a href="#④SPI1的设置修改" class="headerlink" title="④SPI1的设置修改"></a>④SPI1的设置修改</h3><pre><code>在左边栏点击connectivity展开
-点击SPI1进入设置页面
-Mode部分我们选择Full-Duplex Master
-下方的Parameter Settings里把prescaler改成4
-这样SPI1部分就设置好了</code></pre><h3 id="⑤USART1设置修改"><a href="#⑤USART1设置修改" class="headerlink" title="⑤USART1设置修改"></a>⑤USART1设置修改</h3><pre><code>在左边栏点击connectivity展开
+<h3 id="插件包都下载完成之后就可以开始进行配置了"><a href="#插件包都下载完成之后就可以开始进行配置了" class="headerlink" title="插件包都下载完成之后就可以开始进行配置了"></a>插件包都下载完成之后就可以开始进行配置了</h3><h3 id="①file-new-project-创建新工程"><a href="#①file-new-project-创建新工程" class="headerlink" title="①file-new project 创建新工程"></a>①file-new project 创建新工程</h3><h3 id="②弹出来的页面里我们搜索STM32F401RET-找到之后双击它-这个时候我们就进入了工程的设置页面"><a href="#②弹出来的页面里我们搜索STM32F401RET-找到之后双击它-这个时候我们就进入了工程的设置页面" class="headerlink" title="②弹出来的页面里我们搜索STM32F401RET 找到之后双击它 这个时候我们就进入了工程的设置页面"></a>②弹出来的页面里我们搜索STM32F401RET 找到之后双击它 这个时候我们就进入了工程的设置页面</h3><h3 id="③SYS设置修改"><a href="#③SYS设置修改" class="headerlink" title="③SYS设置修改"></a>③SYS设置修改</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在左边栏里点击system core他会展开</span><br><span class="line">展开之后我们点击SYS</span><br><span class="line">这是展开了SYS的设置页面</span><br><span class="line">我们把Debug这栏选择Serial</span><br><span class="line">这样SYS就设置好了</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="④SPI1的设置修改"><a href="#④SPI1的设置修改" class="headerlink" title="④SPI1的设置修改"></a>④SPI1的设置修改</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在左边栏点击connectivity展开</span><br><span class="line">点击SPI1进入设置页面</span><br><span class="line">Mode部分我们选择Full-Duplex Master</span><br><span class="line">下方的Parameter Settings里把prescaler改成4</span><br><span class="line">这样SPI1部分就设置好了</span><br></pre></td></tr></table></figure>
+
+<h3 id="⑤USART1设置修改"><a href="#⑤USART1设置修改" class="headerlink" title="⑤USART1设置修改"></a>⑤USART1设置修改</h3><pre><code>在左边栏点击connectivity展开
 点击USART1进入设置页面
 Mode部分我们选择Asynchronous
 这样USART1部分就设置好了</code></pre><h3 id="⑥点击additional-software-进入设置页面"><a href="#⑥点击additional-software-进入设置页面" class="headerlink" title="⑥点击additional software 进入设置页面"></a>⑥点击additional software 进入设置页面</h3><pre><code>找到后缀为X -CUBE-BLE1的设置栏
@@ -572,8 +570,6 @@ controller和Utils这两栏要勾选上
     <div class="sidebar-content sidebar-content-show-archive">
           <div class="sidebar-panel-archives">
     <!-- 在ejs中将archive按照时间排序 -->
-    
-    
     
     
     
