@@ -198,14 +198,14 @@
 <h3 id="④SPI1的设置修改"><a href="#④SPI1的设置修改" class="headerlink" title="④SPI1的设置修改"></a>④SPI1的设置修改</h3><p>在左边栏点击connectivity展开<br>点击SPI1进入设置页面<br>Mode部分我们选择Full-Duplex Master<br>下方的Parameter Settings里把prescaler改成4<br>这样SPI1部分就设置好了<br><img src="/images/blue/BLUE05.png" alt><br><img src="/images/blue/BLUE06.png" alt></p>
 <h3 id="⑤USART1设置修改"><a href="#⑤USART1设置修改" class="headerlink" title="⑤USART1设置修改"></a>⑤USART1设置修改</h3><p>在左边栏点击connectivity展开<br>点击USART1进入设置页面<br>Mode部分我们选择Asynchronous<br>这样USART1部分就设置好了<br><img src="/images/blue/BLUE07.png" alt></p>
 <h3 id="⑥点击additional-software-进入设置页面"><a href="#⑥点击additional-software-进入设置页面" class="headerlink" title="⑥点击additional software 进入设置页面"></a>⑥点击additional software 进入设置页面</h3><p>找到后缀为X -CUBE-BLE1的设置栏<br>按左边的下拉按钮 会有几个设置<br>application这栏右边的选择框选择beacon<br>HCU_TL这栏右边的选择框选择basic<br>HCU_TL_INTERFACE这栏右边的选择框选择UserBoard<br>controller和Utils这两栏要勾选上<br>然后点OK 保存 这样这一步我们就设置好了<br><img src="/images/blue/BLUE08.png" alt><br><img src="/images/blue/BLUE09.png" alt></p>
-<p>这时左边栏会多出来刚刚设置的BLUE点击它<br>将MODE那栏里的两个都勾选上<br><img src="/images/blue/BLUE010.png" alt></p>
-<p>在Platform Settings里 这时只有两个是对应上的<br>我们需要在芯片上自己设置一下<br>最右边的芯片部分 找到PC4<br>鼠标左键点一下PC4选择GPIO_EXTI4<br><img src="/images/blue/BLUE011.png" alt><br><img src="/images/blue/BLUE012.png" alt></p>
-<p>相同的方法 在芯片那边找到PA4和PB1选择GPIO output<br><img src="/images/blue/BLUE013.png" alt><br><img src="/images/blue/BLUE014.png" alt></p>
-<p>这样引脚就都配置完成<br><img src="/images/blue/BLUE015.png" alt></p>
-<p>现在去blue设置栏把Exti Line那一栏最右边的选择框选择PC4<br>其中CSline选择PA4  resetline选择PB1<br><img src="/images/blue/BLUE016.png" alt></p>
-<h3 id="⑦NVIC的设置"><a href="#⑦NVIC的设置" class="headerlink" title="⑦NVIC的设置"></a>⑦NVIC的设置</h3><p>在左边栏里点击system core他会展开<br>展开之后我们点击NVIC<br>这是展开了NVIC的设置页面<br>我们把写着EXTI line4 interrupt的那一栏勾选上<br>这样NVIC就设置好了<br><img src="/images/blue/BLUE017.png" alt></p>
-<h3 id="⑧时钟设置"><a href="#⑧时钟设置" class="headerlink" title="⑧时钟设置"></a>⑧时钟设置</h3><p>点击上方的Clock Configuration进入时钟配置<br>找到写着HCLK(MHZ)那栏 把数字改成72<br><img src="/images/blue/BLUE018.png" alt></p>
-<h3 id="⑨工程设置"><a href="#⑨工程设置" class="headerlink" title="⑨工程设置"></a>⑨工程设置</h3><p>点击上方的project manager<br>在这里面可以自己给工程起名字和选择路径以及一些其他的配置<br>工程路径和名字最好不要有中文 有可能会报错<br><img src="/images/blue/BLUE019.png" alt></p>
+<p>这时左边栏会多出来刚刚设置的BLUE点击它<br>将MODE那栏里的两个都勾选上<br><img src="/images/blue/BLUE10.png" alt></p>
+<p>在Platform Settings里 这时只有两个是对应上的<br>我们需要在芯片上自己设置一下<br>最右边的芯片部分 找到PC4<br>鼠标左键点一下PC4选择GPIO_EXTI4<br><img src="/images/blue/BLUE11.png" alt><br><img src="/images/blue/BLUE12.png" alt></p>
+<p>相同的方法 在芯片那边找到PA4和PB1选择GPIO output<br><img src="/images/blue/BLUE13.png" alt><br><img src="/images/blue/BLUE14.png" alt></p>
+<p>这样引脚就都配置完成<br><img src="/images/blue/BLUE15.png" alt></p>
+<p>现在去blue设置栏把Exti Line那一栏最右边的选择框选择PC4<br>其中CSline选择PA4  resetline选择PB1<br><img src="/images/blue/BLUE16.png" alt></p>
+<h3 id="⑦NVIC的设置"><a href="#⑦NVIC的设置" class="headerlink" title="⑦NVIC的设置"></a>⑦NVIC的设置</h3><p>在左边栏里点击system core他会展开<br>展开之后我们点击NVIC<br>这是展开了NVIC的设置页面<br>我们把写着EXTI line4 interrupt的那一栏勾选上<br>这样NVIC就设置好了<br><img src="/images/blue/BLUE17.png" alt></p>
+<h3 id="⑧时钟设置"><a href="#⑧时钟设置" class="headerlink" title="⑧时钟设置"></a>⑧时钟设置</h3><p>点击上方的Clock Configuration进入时钟配置<br>找到写着HCLK(MHZ)那栏 把数字改成72<br><img src="/images/blue/BLUE18.png" alt></p>
+<h3 id="⑨工程设置"><a href="#⑨工程设置" class="headerlink" title="⑨工程设置"></a>⑨工程设置</h3><p>点击上方的project manager<br>在这里面可以自己给工程起名字和选择路径以及一些其他的配置<br>工程路径和名字最好不要有中文 有可能会报错<br><img src="/images/blue/BLUE19.png" alt></p>
 <p>over.</p>
 
         </div>
