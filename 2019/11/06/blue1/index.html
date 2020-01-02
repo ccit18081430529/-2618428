@@ -186,14 +186,14 @@
         </header>
 
         <div class="post-content">
-            <p><strong>PS: 本设置只针对cannon开发板</strong><br>**    本篇博客只讲beacon例程的配置 **<br>**    配置基于STM32cube软件 **</p>
+            <p><strong>PS: 本设置只针对cannon开发板</strong><br>    <strong>本篇博客只讲beacon例程的配置</strong><br>    <strong>配置基于STM32cube软件</strong></p>
 <h3 id="首先打开STM32cube"><a href="#首先打开STM32cube" class="headerlink" title="首先打开STM32cube"></a>首先打开STM32cube</h3><p>没有下载STM32cube可以进行下载</p>
 <p>stm32cube版本号要高于5.3否则也无法实现功能</p>
 <p>cannon开发板的型号是STM32F401RET 需要在软件内先下载或者更新</p>
 <p>还要下载名为X-CUBE-BLE1和X-CUBE-MEMS1的两个插件包</p>
 <p>插件包都下载完成之后就可以开始进行配置了</p>
 <h3 id="①file-new-project-创建新工程"><a href="#①file-new-project-创建新工程" class="headerlink" title="①file-new project 创建新工程"></a>①file-new project 创建新工程</h3><p><img src="/images/blue/BLUE01.png" alt></p>
-<h3 id="②弹出来的页面里我们搜索STM32F401RET-找到之后双击它-这个时候我们就进入了工程的设置页面"><a href="#②弹出来的页面里我们搜索STM32F401RET-找到之后双击它-这个时候我们就进入了工程的设置页面" class="headerlink" title="②弹出来的页面里我们搜索STM32F401RET 找到之后双击它 这个时候我们就进入了工程的设置页面"></a>②弹出来的页面里我们搜索STM32F401RET 找到之后双击它 这个时候我们就进入了工程的设置页面</h3><p><img src="/images/blue/BLUE02.png" alt><br><img src="/images/blue/BLUE03.png" alt></p>
+<h3 id="②进入工程的设置页面"><a href="#②进入工程的设置页面" class="headerlink" title="②进入工程的设置页面"></a>②进入工程的设置页面</h3><p>弹出来的页面里我们搜索STM32F401RET<br>找到之后双击它 这个时候我们就进入了工程的设置页面<br><img src="/images/blue/BLUE02.png" alt><br><img src="/images/blue/BLUE03.png" alt></p>
 <h3 id="③SYS设置修改"><a href="#③SYS设置修改" class="headerlink" title="③SYS设置修改"></a>③SYS设置修改</h3><p>在左边栏里点击system core他会展开<br>展开之后我们点击SYS<br>这是展开了SYS的设置页面<br>我们把Debug这栏选择Serial<br>这样SYS就设置好了<br><img src="/images/blue/BLUE04.png" alt>  </p>
 <h3 id="④SPI1的设置修改"><a href="#④SPI1的设置修改" class="headerlink" title="④SPI1的设置修改"></a>④SPI1的设置修改</h3><p>在左边栏点击connectivity展开<br>点击SPI1进入设置页面<br>Mode部分我们选择Full-Duplex Master<br>下方的Parameter Settings里把prescaler改成4<br>这样SPI1部分就设置好了<br><img src="/images/blue/BLUE05.png" alt><br><img src="/images/blue/BLUE06.png" alt></p>
 <h3 id="⑤USART1设置修改"><a href="#⑤USART1设置修改" class="headerlink" title="⑤USART1设置修改"></a>⑤USART1设置修改</h3><p>在左边栏点击connectivity展开<br>点击USART1进入设置页面<br>Mode部分我们选择Asynchronous<br>这样USART1部分就设置好了<br><img src="/images/blue/BLUE07.png" alt></p>
@@ -204,8 +204,8 @@
 <p>这样引脚就都配置完成<br><img src="/images/blue/BLUE015.png" alt></p>
 <p>现在去blue设置栏把Exti Line那一栏最右边的选择框选择PC4<br>其中CSline选择PA4  resetline选择PB1<br><img src="/images/blue/BLUE016.png" alt></p>
 <h3 id="⑦NVIC的设置"><a href="#⑦NVIC的设置" class="headerlink" title="⑦NVIC的设置"></a>⑦NVIC的设置</h3><p>在左边栏里点击system core他会展开<br>展开之后我们点击NVIC<br>这是展开了NVIC的设置页面<br>我们把写着EXTI line4 interrupt的那一栏勾选上<br>这样NVIC就设置好了<br><img src="/images/blue/BLUE017.png" alt></p>
-<h3 id="⑨时钟设置"><a href="#⑨时钟设置" class="headerlink" title="⑨时钟设置"></a>⑨时钟设置</h3><p>点击上方的Clock Configuration进入时钟配置<br>找到写着HCLK(MHZ)那栏 把数字改成72<br><img src="/images/blue/BLUE018.png" alt></p>
-<h3 id="⑩工程设置"><a href="#⑩工程设置" class="headerlink" title="⑩工程设置"></a>⑩工程设置</h3><p>点击上方的project manager<br>在这里面可以自己给工程起名字和选择路径以及一些其他的配置<br>工程路径和名字最好不要有中文 有可能会报错<br><img src="/images/blue/BLUE019.png" alt></p>
+<h3 id="⑧时钟设置"><a href="#⑧时钟设置" class="headerlink" title="⑧时钟设置"></a>⑧时钟设置</h3><p>点击上方的Clock Configuration进入时钟配置<br>找到写着HCLK(MHZ)那栏 把数字改成72<br><img src="/images/blue/BLUE018.png" alt></p>
+<h3 id="⑨工程设置"><a href="#⑨工程设置" class="headerlink" title="⑨工程设置"></a>⑨工程设置</h3><p>点击上方的project manager<br>在这里面可以自己给工程起名字和选择路径以及一些其他的配置<br>工程路径和名字最好不要有中文 有可能会报错<br><img src="/images/blue/BLUE019.png" alt></p>
 <p>over.</p>
 
         </div>
